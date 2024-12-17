@@ -1,5 +1,3 @@
-Here's an explanation for the end user of how to use the app, along with sample expected JSON:
-
 ---
 
 ## README: How to Use the App
