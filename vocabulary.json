@@ -1,0 +1,42 @@
+{
+  "en": {
+    "contact_info": "Contact Information",
+    "education": "Education",
+    "languages": "Languages",
+    "technical_skills": "Technical Skills",
+    "interests": "Interests",
+    "summary": "About me",
+    "key_qualities": "Key Strengths",
+    "work_experience": "Work Experience",
+    "technologies": "Technologies",
+    "birth": "Birth",
+    "address": "Address",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "phone": "Phone",
+    "grade": "Grade",
+    "no_grade": "Not completed"
+  },
+  "it": {
+    "contact_info": "Informazioni di contatto",
+    "education": "Istruzione",
+    "languages": "Lingue",
+    "technical_skills": "Competenze tecniche",
+    "interests": "Interessi",
+    "summary": "Introduzione",
+    "key_qualities": "Competenze chiave",
+    "work_experience": "Esperienza lavorativa",
+    "technologies": "Tecnologie",
+    "birth": "Data di nascita",
+    "address": "Indirizzo",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "phone": "Telefono",
+    "grade": "Votazione",
+    "no_grade": "Non completato"
+  }
+}

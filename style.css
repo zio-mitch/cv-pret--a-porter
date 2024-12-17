@@ -1,0 +1,222 @@
+/* General layout styles */
+:root {
+    --primary-color: #2e86c1;
+    --secondary-color: #8e44ad;
+    --tertiary-color: #2980b9;
+    --neutral-color: #333;
+    --light-color: #f9f9f9;
+    --background-color: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    --border-color: #ddd;
+    --border-light: #eee;
+    --spacing-small: 10px;
+    --spacing-medium: 20px;
+    --spacing-large: 30px;
+    --cursive-text: italic;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--light-color);
+    color: var(--neutral-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: var(--spacing-large);
+}
+
+#full-name {
+    font-family: 'Georgia', serif;
+    font-size: 3.2em;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-align: left;
+    margin: 0;
+    padding-left: var(--spacing-large);
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-small);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+#cv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: var(--spacing-medium);
+}
+
+/* Left column */
+#left-column {
+    width: 30%;
+    padding: var(--spacing-medium);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+#left-column h3 {
+    font-family: 'Georgia', serif;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-small);
+}
+
+#left-column p, #left-column ul {
+    margin-bottom: var(--spacing-small);
+    line-height: 1.5;
+}
+
+#left-column ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#left-column ul li {
+    margin-bottom: var(--spacing-small);
+}
+
+#left-column a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+#left-column a:hover {
+    text-decoration: underline;
+}
+
+/* Right column */
+#right-column {
+    width: 65%;
+    padding: var(--spacing-medium);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+#right-column h3 {
+    font-family: 'Georgia', serif;
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-medium);
+}
+
+#right-column p, #right-column ul {
+    margin-bottom: var(--spacing-medium);
+    line-height: 1.6;
+}
+
+#right-column ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#right-column ul li {
+    margin-bottom: var(--spacing-small);
+}
+
+/* Section title enhancements */
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* Job and skill descriptions */
+.job-description, .skill-description {
+    margin-left: var(--spacing-medium);
+    font-style: italic;
+    color: #555;
+}
+
+/* Add space between sections */
+#contact-info, #education, #languages, #technical-skills, #interests, #summary, #key-qualities, #work-experience {
+    margin-bottom: var(--spacing-large);
+}
+
+/* Separator lines after work experience */
+#work-experience ul li {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+
+#work-experience ul li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Add subtle separators between sections */
+#left-column > div, #right-column > div {
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: var(--spacing-medium);
+}
+
+/* Work Experience Styling */
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--neutral-color);
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin-top: var(--spacing-small);
+}
+
+.location {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: var(--spacing-small);
+}
+
+.job-description {
+    font-size: 16px;
+    color: #555;
+    margin-top: var(--spacing-medium);
+    line-height: 1.5;
+}
+
+.tech-stack {
+    font-style: var(--cursive-text);
+}
+
+.technologies {
+    font-size: 14px;
+    color: #555;
+    margin-top: var(--spacing-medium);
+    font-style: var(--cursive-text);
+}
+
+/* Prevent columns from stacking on smaller screens */
+@media (max-width: 768px) {
+    #cv {
+        flex-direction: column;
+    }
+
+    #left-column, #right-column {
+        width: 100%;
+    }
+}
+
+/* Consent Section Styling */
+.data-consent {
+    margin-top: var(--spacing-large);
+    padding: var(--spacing-medium);
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    font-size: 0.9em;
+    color: #555;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data-consent p {
+    text-align: center;
+    margin: 0;
+}
